@@ -16,7 +16,7 @@ pipeline {
 
         stage('Run Docker Container') {
             steps {
-                sh 'docker run -d -p 3010"3000 --name node_app node-docker-app'
+                sh 'docker run -d -p 3010:3000 --name node_app node-docker-app'
             }
         }
     }
