@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Git Clone') {
             steps {
-                git url: "", branch: 'main'
+                git url: "https://github.com/IradIcaTE/Node_app.git", branch: 'main'
             }
         }
 
